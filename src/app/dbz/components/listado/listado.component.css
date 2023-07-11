@@ -1,0 +1,13 @@
+section{
+  margin-top: 1rem;
+}
+
+.item:hover{
+  background: rgba(130, 129, 129, 0.33);
+}
+
+@media (min-width: 768px){
+  section{
+    margin: 0;
+  }
+}

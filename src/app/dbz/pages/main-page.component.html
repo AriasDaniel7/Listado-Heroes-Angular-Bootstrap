@@ -1,0 +1,17 @@
+<header>
+  <h1 class="text-center mt-2">DBZ Personajes</h1>
+  <hr>
+</header>
+<main>
+  <div class="flex container">
+    <div>
+      <app-insertar-heroe (personajeEmitir)="recibirPersonaje($event)"></app-insertar-heroe>
+    </div>
+    <div>
+      <app-listado (idRecibido)="recibirId($event)" [personajeListado]="personajes"></app-listado>
+    </div>
+  </div>
+</main>
+<footer class="text-center m-4">
+  Todos los derechos reservados {{ calcularYear() }}: © Daniel Arias®.
+</footer>

@@ -1,0 +1,28 @@
+<section>
+  <h4 class="text-center">Agregar Personaje</h4>
+  <form (ngSubmit)="emitirPersonaje()">
+    <div class="form-floating mb-3">
+      <input
+      type="text"
+      name="nombre"
+      [(ngModel)]="personajeLectura.nombre"
+      class="form-control"
+      id="floatingInput"
+      placeholder="nombre: ">
+      <label for="floatingInput">Nombre: </label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input
+      type="number"
+      name="poder"
+      [(ngModel)]="personajeLectura.poder"
+      class="form-control"
+      id="floatingInput"
+      placeholder="poder: ">
+      <label for="floatingInput">Poder: </label>
+    </div>
+
+    <button class="btn btn-primary w-100" type="submit">Agregar</button>
+  </form>
+</section>
